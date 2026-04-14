@@ -1,0 +1,15 @@
+@model IEnumerable<QuanLySinhVien.Models.Course>
+<div class="container">
+    <h2>DANH SÁCH KHÓA HỌC - UTE</h2>
+    <a href="/Course/Create" class="btn btn-primary">Thêm khóa học mới</a>
+    <table class="table table-striped">
+        <thead>
+            <tr><th>Tên Khóa Học</th></tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model) {
+                <tr><td>@item.Name</td></tr>
+            }
+        </tbody>
+    </table>
+</div>
