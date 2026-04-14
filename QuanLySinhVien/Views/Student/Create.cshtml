@@ -1,0 +1,17 @@
+@model QuanLySinhVien.Models.Student
+
+<div class="container">
+    <h2 class="text-primary">Thêm Sinh Viên Mới</h2>
+    <form method="post">
+        <div class="mb-3">
+            <label class="form-label">Tên sinh viên:</label>
+            <input asp-for="Name" class="form-control" placeholder="Nhập tên..." />
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Email:</label>
+            <input asp-for="Email" class="form-control" placeholder="Nhập email..." />
+        </div>
+        <button type="submit" class="btn btn-success">Lưu thông tin</button>
+        <a href="/Student" class="btn btn-secondary">Quay lại</a>
+    </form>
+</div>

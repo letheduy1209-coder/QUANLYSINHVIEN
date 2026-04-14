@@ -1,0 +1,21 @@
+@model IEnumerable<QuanLySinhVien.Models.Student>
+<div class="container">
+    <h2>DANH SÁCH SINH VIÊN - UTE</h2>
+    <a href="/Student/Create" class="btn btn-primary">Thêm sinh viên mới</a>
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Tên Sinh Viên</th>
+                <th>Email</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model) {
+                <tr>
+                    <td>@item.Name</td>
+                    <td>@item.Email</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
